@@ -1,0 +1,21 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2024-08-22
+  Features:
+    - Added multiple thought categories
+    - Added compatibility with 'Expansion Reminder' mod
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2024-08-20
+  Changes:
+    - Disable thoughts by default for now
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2024-08-20
+  Changes:
+    - Added option to enable/disable bubbles or thoughts individually
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-08-19
+  Features:
+    - Initial creation

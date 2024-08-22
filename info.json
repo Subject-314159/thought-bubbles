@@ -1,0 +1,12 @@
+{
+  "name": "thought-bubbles",
+  "version": "1.1.0",
+  "title": "Thought bubbles",
+  "author": "Subject31415",
+  "factorio_version": "1.1",
+  "dependencies": [
+    "base >= 1.1",
+    "?expansion-reminder>=1.2"
+  ],
+  "description": "Visualizes what is on the engineer's mind by displaying thought bubbles"
+}
