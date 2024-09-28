@@ -1,5 +1,3 @@
-local thoughts = require("lib.thoughts")
-
 local get_global_player = function(player_index)
     if not global.players[player_index] then
         global.players[player_index] = {}
@@ -132,7 +130,8 @@ local show_thought = function(player)
     local t
     if rnd == "joking" or rnd == "sentient" or rnd == "depressed" or rnd == "factorio" then
         -- Get random thought from the chosen category
-        t = thoughts[rnd][math.random(1, #thoughts[rnd])]
+        local idx = math.random(1, 100)
+        t = {rnd .. "." .. rnd .. "-thought-" .. idx}
     elseif rnd == "fff" then
         -- Get friday fact thought
         local fact = remote.call("friday-facts", "get-random-fact")
@@ -163,6 +162,7 @@ local show_thought = function(player)
         from_offset = {pos.x + 3.1, pos.y + 1.65},
         to_offset = {pos.x + 2.4, pos.y + 0.7},
         surface = p.character.surface,
+        players = {p},
         time_to_live = TTL
     }
     gp.line = rendering.draw_line(lprop)
